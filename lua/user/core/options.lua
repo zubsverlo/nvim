@@ -32,3 +32,6 @@ opt.clipboard:append("unnamedplus")
 
 -- ability to search throught the path where nvim was opened
 vim.opt.path:append '**'
+
+-- delete mouse
+vim.opt.mouse = ""

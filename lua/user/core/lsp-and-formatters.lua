@@ -26,6 +26,12 @@ require("conform").setup({
 		-- javascript = { { "prettierd", "prettier" } },
 	},
 })
+
+require("conform").formatters.black = {
+  prepend_args = { "-l", "80" },
+  -- The base args are { "-filename", "$FILENAME" } so the final args will be
+  -- { "-i", "2", "-filename", "$FILENAME" }
+}
 require("mason-conform").setup()
 
 -- Format command
